@@ -7,10 +7,11 @@ const placeList = props => {
   return (
     <FlatList
       style={styles.listContainer}
-      data={props.places} //data has to be an array of data source
+      data={props.places} //data has to be an array of objects of data source with key property
       renderItem={info => (
         <ListItem
-          placeName={info.item.value}
+          placeName={info.item.name}
+          placeImage={info.item.image}
           onItemPressed={() => props.onItemDeleted(info.item.key)}
         />
       )}

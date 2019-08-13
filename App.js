@@ -19,7 +19,7 @@ class App extends Component {
   state = {
     places: []
   };
-
+  //VISIT REACT NATIVE DOCUMENTATION GUIDES SECTION TO KNOW MORE ABOUT HANDLING LOCAL IMAGES AND IMAGES GOT FROM THE WEB
   placeAddedHandler = placeName => {
     this.setState(prevState => {
       return {

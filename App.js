@@ -21,6 +21,7 @@ class App extends Component {
     places: [],
     selectedPlace: null
   };
+
   //VISIT REACT NATIVE DOCUMENTATION GUIDES SECTION TO KNOW MORE ABOUT HANDLING LOCAL IMAGES AND IMAGES GOT FROM THE WEB
   placeAddedHandler = placeName => {
     this.setState(prevState => {

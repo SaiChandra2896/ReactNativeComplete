@@ -39,7 +39,7 @@ const reducer = (state = initialstate, action) => {
           return place.key === action.placeKey;
         })
       };
-    case DELETE_PLACE:
+    case DESELECT_PLACE:
       return {
         ...state,
         selectedPlace: null
